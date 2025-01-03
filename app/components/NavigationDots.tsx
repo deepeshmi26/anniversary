@@ -21,7 +21,9 @@ const NavigationDots = ({ numberOfSections }: NavigationDotsProps) => {
     const observer = new IntersectionObserver((entries) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
-          const sectionIndex = Array.from(sections).indexOf(entry.target);
+          const sectionIndex = Array.from(sections).indexOf(
+            entry.target as HTMLElement
+          );
           setActiveSection(sectionIndex);
         }
       });
