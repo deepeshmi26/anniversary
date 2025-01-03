@@ -20,7 +20,7 @@ const CallToAction = () => {
   return (
     <div className="flex flex-col items-center gap-8">
       <h2 className="text-3xl font-romantic bg-gradient-to-r from-primary to-primary-dark bg-clip-text">
-        Picture abhi baaki hai mere dost
+        Picture abhi baaki hai meri jaan
       </h2>
 
       <button
