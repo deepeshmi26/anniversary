@@ -1,25 +1,9 @@
 import "./globals.css";
-import {
-  Inter,
-  Dancing_Script,
-  Playfair_Display,
-  Cormorant,
-} from "next/font/google";
+import { Inter, Playfair_Display } from "next/font/google";
 import type { Metadata } from "next";
-
-const inter = Inter({ subsets: ["latin"] });
-
-const dancingScript = Dancing_Script({
-  subsets: ["latin"],
-  display: "swap",
-});
+Inter({ subsets: ["latin"] });
 
 const playfair = Playfair_Display({
-  subsets: ["latin"],
-  display: "swap",
-});
-
-const cormorant = Cormorant({
   subsets: ["latin"],
   display: "swap",
 });
