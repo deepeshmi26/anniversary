@@ -60,8 +60,8 @@ const MainContent = () => {
 
 export default function Home() {
   return (
-    // <EntryWrapper>
-    <MainContent />
-    // </EntryWrapper>
+    <EntryWrapper>
+      <MainContent />
+    </EntryWrapper>
   );
 }
