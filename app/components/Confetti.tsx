@@ -17,7 +17,7 @@ const Confetti = () => {
       const timeLeft = animationEnd - Date.now();
 
       if (timeLeft <= 0) {
-        return clearInterval(interval);
+        return clearInterval(interval as unknown as number);
       }
 
       const particleCount = 50;
@@ -43,7 +43,7 @@ const Confetti = () => {
     }, 250);
 
     return () => {
-      clearInterval(interval);
+      clearInterval(interval as unknown as number);
     };
   }, []);
 
