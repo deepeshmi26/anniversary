@@ -1,8 +1,26 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import "./globals.css";
-import { Playfair_Display } from "next/font/google";
+import {
+  Inter,
+  Dancing_Script,
+  Playfair_Display,
+  Cormorant,
+} from "next/font/google";
 import type { Metadata } from "next";
 
+const inter = Inter({ subsets: ["latin"] });
+
+const dancingScript = Dancing_Script({
+  subsets: ["latin"],
+  display: "swap",
+});
+
 const playfair = Playfair_Display({
+  subsets: ["latin"],
+  display: "swap",
+});
+
+const cormorant = Cormorant({
   subsets: ["latin"],
   display: "swap",
 });
