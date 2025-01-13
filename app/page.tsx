@@ -10,9 +10,10 @@ import NavigationDots from "./components/NavigationDots";
 import { useKeyboardNavigation } from "./hooks/useKeyboardNavigation";
 import Confetti from "./components/Confetti";
 import EntryWrapper from "./components/EntryWrapper";
+import StarMap from "./components/StarMap";
 
 const MainContent = () => {
-  useKeyboardNavigation(4);
+  useKeyboardNavigation(5);
 
   return (
     <main
@@ -24,7 +25,7 @@ const MainContent = () => {
       <div className="shape shape-2" />
       <div className="shape shape-3" />
 
-      <NavigationDots numberOfSections={4} />
+      <NavigationDots numberOfSections={5} />
       <Confetti />
 
       <Section>
@@ -51,6 +52,10 @@ const MainContent = () => {
         <Stats />
       </Section>
 
+      {/* <Section className="p-0"> */}
+      <StarMap />
+      {/* </Section> */}
+
       <Section>
         <CallToAction />
       </Section>
@@ -60,8 +65,8 @@ const MainContent = () => {
 
 export default function Home() {
   return (
-    <EntryWrapper>
-      <MainContent />
-    </EntryWrapper>
+    // <EntryWrapper>
+    <MainContent />
+    // </EntryWrapper>
   );
 }
